@@ -32,18 +32,17 @@
         /* Ajuste de estructura para Header fijo */
         body,
         html {
-            height: 100vh;
             margin: 0;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         /* Contenedor que separa el Header de la herramienta */
         .tool-wrapper {
             display: flex;
-            flex: 1;
-            /* Ocupa todo el alto restante */
+            height: 85vh;
+            min-height: 600px;
             overflow: hidden;
             background: #fff;
         }
@@ -428,7 +427,7 @@
             }
         });
     </script>
-<div data-include="footer.html"></div>
+    <div data-include="footer.html"></div>
 </body>
 
 </html>
