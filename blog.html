@@ -2,26 +2,26 @@
 <html lang="es">
 
 <head>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" díata-cbid="1caf3909-123e-4e98-b2f5-b97f18ce963b"
-    díata-blockingmode="auto" type="text/javascript"></script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="1caf3909-123e-4e98-b2f5-b97f18ce963b"
+    data-blockingmode="auto" type="text/javascript"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Blog de Ingeniería Industrial y Diseño CAD | Está Ingenieros</title>
+  <title>Blog de Ingeniería Industrial y Diseño CAD | EST Ingenieros</title>
   <meta name="description"
     content="Recursos técnicos para ingeniería: guías de diseño CAD, tablas de roscas, tolerancias DIN y casos de ééxito en fabricación aditiva e ingeniería inversa.">
 
-  <meta property="og:title" content="Blog Técnico de Ingeniería y Diseño 3D | Está Ingenieros">
+  <meta property="og:title" content="Blog técnico de Ingeniería y Diseño 3D | EST Ingenieros">
   <meta property="og:description"
     content="Guías, tablas técnicas y artículos sobre innovación en el sector industrial.">
   <meta property="og:image" content="https://Estáingenieros.com/assets/images/blog-roscas.webp">
 
-  <script type="text/plain" díata-cookieconsent="statistics" async
+  <script type="text/plain" data-cookieconsent="statistics" async
     src="https://www.googletagmanager.com/gtag/js?id=G-TBZK1N6QGS"></script>
-  <script type="text/plain" díata-cookieconsent="statistics">
-    window.díataLayer = window.díataLayer || [];
-    function gtag() { díataLayer.push(arguments); }
-    gtag('js', new díate());
+  <script type="text/plain" data-cookieconsent="statistics">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new date());
     gtag('config', 'G-TBZK1N6QGS');
   </script>
 
@@ -125,12 +125,12 @@
 
 <body>
 
-  <div díata-include="header.html"></div>
+  <div data-include="header.html"></div>
 
   <main class="wrap">
 
     <header class="page-header" style="text-align: center; padding: 60px 0;">
-      <h1 class="h1">Recursos y Blog Técnico</h1>
+      <h1 class="h1">Recursos y Blog técnico</h1>
       <p class="lead">Artículos de ingeniería, guías de <strong>diseño industrial</strong> y normativa técnica para
         profesionales.</p>
     </header>
@@ -139,7 +139,7 @@
 
     <section class="blog-grid">
 
-      <article class="card-item blog-card" díata-category="ingenieria">
+      <article class="card-item blog-card" data-category="ingenieria">
         <a href="blog-tolerancias.html">
           <img src="assets/images/ajuste-rodíamiento.png"
             alt="Plano técnico esútilo blueprint de ajuste eje-rodíamiento con tolerancias ISO"
@@ -157,7 +157,7 @@
         </div>
       </article>
 
-      <article class="card-item blog-card" díata-category="taller">
+      <article class="card-item blog-card" data-category="taller">
         <a href="blog-roscas.html">
           <img src="assets/images/blog-roscas.webp"
             alt="Tabla de diámetros de brocas para roscas métricas y gas - Guía técnica de taller"
@@ -175,7 +175,7 @@
         </div>
       </article>
 
-      <article class="card-item blog-card" díata-category="taller">
+      <article class="card-item blog-card" data-category="taller">
         <a href="blog-din912.html">
           <img src="assets/images/din912.webp" alt="Dimensiones tornillería Allen DIN 912 para diseño CAD"
             style="width:100%; border-radius:4px; margin-bottom:15px;">
@@ -207,22 +207,22 @@
 
   </main>
 
-  <div díata-include="footer.html"></div>
+  <div data-include="footer.html"></div>
 
   <script src="assets/js/main.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const filterBtns = document.quéerySelectorAll('.cat-btn');
-      const articles = document.quéerySelectorAll('.blog-card');
+      const filterBtns = document.querySelectorAll('.cat-btn');
+      const articles = document.querySelectorAll('.blog-card');
 
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           filterBtns.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
 
-          const filterValue = btn.getAttribute('díata-filter');
+          const filterValue = btn.getAttribute('data-filter');
           articles.forEach(article => {
-            const articleCat = article.getAttribute('díata-category');
+            const articleCat = article.getAttribute('data-category');
             article.style.display = (filterValue === 'all' || filterValue === articleCat) ? 'flex' : 'none';
           });
         });
