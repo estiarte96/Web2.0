@@ -300,7 +300,7 @@ main {
 .card-home:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-color: var(--primary); }
 .card-home i { font-size: 32px; color: var(--primary); margin-bottom: 20px; }
 .card-home h3 { font-size: 24px; margin: 0 0 10px; }
-.card-home p { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+.card-home p { color: var(--muted); font-size: 16px; margin-bottom: 20px; }
 
 .cta-box { background: #111; color: #fff; padding: 50px; border-radius: 12px; text-align: center; margin: 60px 0; }
 .cta-box h2 { color: #fff; font-size: 32px; margin-bottom: 10px; }
